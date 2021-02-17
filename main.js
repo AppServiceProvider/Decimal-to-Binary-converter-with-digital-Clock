@@ -8,6 +8,10 @@ function binary(e) {
     const num = document.getElementById('number').value;
 
     if (num === "") {
+        setTimeout(function show() {
+            var snd = new Audio('play/button-28.mp3');
+            snd.play()
+        }, )
         alert('please enter a number')
     } else if (num < 0) {
         alert("please enter positive number")
@@ -77,6 +81,14 @@ function digitalClock() {
 
 
 
+
+
+
+
+
+
+    //     progress.style.width = (sec / 60) * 100 + '%'
+
     setInterval(digitalClock, 1000)
 
 }
@@ -84,3 +96,25 @@ function digitalClock() {
 digitalClock();
 
 // digital clock END
+
+
+
+
+//button Beep
+
+
+var bleep = new Audio();
+bleep.src = 'play/button-20.mp3';
+
+
+function dayMonthYear() {
+    let currentDay = new Date()
+    document.getElementById("days").innerText = currentDay.getDate();
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    document.getElementById("month").innerHTML = months[currentDay.getMonth()]
+    document.getElementById("year").innerHTML = currentDay.getFullYear();
+    setInterval(dayMonthYear, )
+
+
+}
+dayMonthYear()

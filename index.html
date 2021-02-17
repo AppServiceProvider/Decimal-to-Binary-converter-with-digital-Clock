@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Decimal to Binary Converter With Digital Clock</title>
     <meta charset="UTF-8" />
@@ -13,40 +12,43 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <!-- Decimal to Binary Converter START -->
     <section>
-        <div class="bg-contact2" style="background-image: url('IMG.jpeg');">
+        <div class="bg-contact2" style="background-image: url('image/IMG.jpeg');">
             <div class="container-contact2">
                 <div class="wrap-contact2">
                     <form class="contact2-form validate-form">
                         <span class="contact2-form-title">
-                            Decimal to Binary Converter
+                            <h1>Decimal to Binary Converter</h1>
                         </span>
                         <div class="wrap-input2">
-                            <input class="input2" type="number" id="number" placeholder="Enter a number" />
+                            <input class="input2" type="number" id="number" placeholder="Enter a number" min="0" max="" required>
                         </div>
-                        <div class="wrap-input2 validate-input" data-validate="Message is required">
+                        <div class="wrap-input2 validate-input" data-validate="Message is required" disabled>
                             <h1 id="result">010101</h1>
                             <h2 id="results"></h2>
                         </div>
                         <div class="container-contact2-form-btn">
                             <div class="wrap-contact2-form-btn">
                                 <div class="contact2-form-bgbtn"></div>
-                                <button class="contact2-form-btn" id="submit">
+                                <button class="contact2-form-btn" id="submit" onmousedown="bleep.play()">
                                     Send Your Message
                                 </button>
                             </div>
                         </div>
                     </form>
-
                     <!--                        Digital clock START-->
                     <div class="clock">
+
                         <div class="display">
                             <h1 id="time"></h1>
                             <small></small>
+                            <div class="fullDay">
+                                <small id="days" class="newDate"></small>
+                                <small id="month" class="newDate"></small>
+                                <small id="year" class="newDate"></small>
+                            </div>
                         </div>
                     </div> <!--                        Digital clock START-->
                 </div>
@@ -54,12 +56,5 @@
         </div>
     </section>
     <!-- Decimal to Binary Converter END -->
-
-
-
-
     <script src="main.js"></script>
-
-</body>
-
-</html>
+</body></html>

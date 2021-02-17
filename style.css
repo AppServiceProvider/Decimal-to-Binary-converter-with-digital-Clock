@@ -1,21 +1,17 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
-
 @font-face {
     font-family: Poppins-Regular;
     src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
-
 @font-face {
     font-family: Poppins-Medium;
     src: url('../fonts/poppins/Poppins-Medium.ttf');
 }
-
 @font-face {
     font-family: Poppins-Bold;
     src: url('../fonts/poppins/Poppins-Bold.ttf');
 }
-
 /*//////////////////////////////////////////////////////////////////
   [ RESTYLE TAG ]*/
 
@@ -24,17 +20,14 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 html {
     overflow: hidden;
 }
-
 body,
 html {
     height: 100%;
     font-family: Poppins-Regular, sans-serif;
 }
-
 /*---------------------------------------------*/
 a {
     font-family: Poppins-Regular;
@@ -47,16 +40,13 @@ a {
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
 }
-
 a:focus {
     outline: none !important;
 }
-
 a:hover {
     text-decoration: none;
     color: #57b846;
 }
-
 /*---------------------------------------------*/
 h1,
 h2,
@@ -66,7 +56,6 @@ h5,
 h6 {
     margin: 0px;
 }
-
 p {
     font-family: Poppins-Regular;
     font-size: 14px;
@@ -74,65 +63,51 @@ p {
     color: #666666;
     margin: 0px;
 }
-
 ul,
 li {
     margin: 0px;
     list-style-type: none;
 }
-
 /*---------------------------------------------*/
 input {
     outline: none;
     border: none;
 }
-
 textarea {
     outline: none;
     border: none;
 }
-
 textarea:focus,
 input:focus {
     border-color: transparent !important;
 }
-
 input:focus::-webkit-input-placeholder {
     color: transparent;
 }
-
 input:focus:-moz-placeholder {
     color: transparent;
 }
-
 input:focus::-moz-placeholder {
     color: transparent;
 }
-
 input:focus:-ms-input-placeholder {
     color: transparent;
 }
-
 textarea:focus::-webkit-input-placeholder {
     color: transparent;
 }
-
 textarea:focus:-moz-placeholder {
     color: transparent;
 }
-
 textarea:focus::-moz-placeholder {
     color: transparent;
 }
-
 textarea:focus:-ms-input-placeholder {
     color: transparent;
 }
-
 input::-webkit-input-placeholder {
     color: #999999;
 }
-
 input:-moz-placeholder {
     color: #999999;
 }
@@ -140,42 +115,33 @@ input:-moz-placeholder {
 input::-moz-placeholder {
     color: #999999;
 }
-
 input:-ms-input-placeholder {
     color: #999999;
 }
-
 textarea::-webkit-input-placeholder {
     color: #999999;
 }
-
 textarea:-moz-placeholder {
     color: #999999;
 }
-
 textarea::-moz-placeholder {
     color: #999999;
 }
-
 textarea:-ms-input-placeholder {
     color: #999999;
 }
-
 /*---------------------------------------------*/
 button {
     outline: none !important;
     border: none;
     background: transparent;
 }
-
 button:hover {
     cursor: pointer;
 }
-
 iframe {
     border: none !important;
 }
-
 /*//////////////////////////////////////////////////////////////////
   [ Contact 2 ]*/
 .bg-contact2 {
@@ -184,7 +150,6 @@ iframe {
     background-position: center center;
     background-size: cover;
 }
-
 .container-contact2 {
     width: 100%;
     min-height: 100vh;
@@ -211,7 +176,6 @@ iframe {
             rgba(213, 0, 125, 0.8),
             rgba(229, 57, 53, 0.8));
 }
-
 .wrap-contact2 {
     width: 790px;
     background: #fff;
@@ -219,14 +183,12 @@ iframe {
     overflow: hidden;
     padding: 72px 55px 90px 55px;
 }
-
 /*------------------------------------------------------------------
   [  ]*/
 
 .contact2-form {
     width: 100%;
 }
-
 .contact2-form-title {
     display: block;
     font-family: Poppins-Bold;
@@ -236,7 +198,6 @@ iframe {
     text-align: center;
     padding-bottom: 90px;
 }
-
 /*------------------------------------------------------------------
   [  ]*/
 
@@ -246,7 +207,6 @@ iframe {
     border-bottom: 2px solid #adadad;
     margin-bottom: 37px;
 }
-
 .input2 {
     display: block;
     width: 100%;
@@ -256,7 +216,6 @@ iframe {
     color: #555555;
     line-height: 1.2;
 }
-
 .focus-input2 {
     position: absolute;
     display: block;
@@ -266,7 +225,6 @@ iframe {
     left: 0;
     pointer-events: none;
 }
-
 .focus-input2::before {
     content: '';
     display: block;
@@ -287,7 +245,6 @@ iframe {
     background: -moz-linear-gradient(45deg, #d5007d, #e53935);
     background: linear-gradient(45deg, #d5007d, #e53935);
 }
-
 .focus-input2::after {
     content: attr(data-placeholder);
     display: block;
@@ -295,34 +252,28 @@ iframe {
     position: absolute;
     top: 0px;
     left: 0;
-
     font-family: Poppins-Regular;
     font-size: 13px;
     color: #999999;
     line-height: 1.2;
-
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
 }
-
 /*---------------------------------------------*/
 input.input2 {
     height: 45px;
 }
-
 input.input2 + .focus-input2::after {
     top: 16px;
     left: 0;
 }
-
 textarea.input2 {
     min-height: 115px;
     padding-top: 13px;
     padding-bottom: 13px;
 }
-
 textarea.input2 + .focus-input2::after {
     top: 16px;
     left: 0;
@@ -331,19 +282,15 @@ textarea.input2 + .focus-input2::after {
 .input2:focus + .focus-input2::after {
     top: -13px;
 }
-
 .input2:focus + .focus-input2::before {
     width: 100%;
 }
-
 .has-val.input2 + .focus-input2::after {
     top: -13px;
 }
-
 .has-val.input2 + .focus-input2::before {
     width: 100%;
 }
-
 /*------------------------------------------------------------------
   [ Button ]*/
 .container-contact2-form-btn {
@@ -356,7 +303,6 @@ textarea.input2 + .focus-input2::after {
     justify-content: center;
     padding-top: 13px;
 }
-
 .wrap-contact2-form-btn {
     display: block;
     position: relative;
@@ -383,13 +329,11 @@ textarea.input2 + .focus-input2::after {
     background: linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
     top: 0;
     left: -100%;
-
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
 }
-
 .contact2-form-btn {
     display: -webkit-box;
     display: -webkit-flex;
@@ -407,16 +351,13 @@ textarea.input2 + .focus-input2::after {
     color: #fff;
     line-height: 1.2;
 }
-
 .wrap-contact2-form-btn:hover .contact2-form-bgbtn {
     left: 0;
 }
-
 h1#result {
     word-wrap: break-word;
     visibility: hidden;
 }
-
 /*------------------------------------------------------------------
   [ Responsive ]*/
 
@@ -425,16 +366,13 @@ h1#result {
         padding: 72px 15px 90px 15px;
     }
 }
-
-
 /*------------------------------------------------------------------
   [ Alert validate ]*/
 
 .validate-input {
     position: relative;
 }
-
-.alert-validate::before {
+alert-validate::before {
     content: attr(data-validate);
     position: absolute;
     max-width: 70%;
@@ -450,22 +388,18 @@ h1#result {
     transform: translateY(-50%);
     right: 0px;
     pointer-events: none;
-
     font-family: Poppins-Regular;
     color: #c80000;
     font-size: 13px;
     line-height: 1.4;
     text-align: left;
-
     visibility: hidden;
     opacity: 0;
-
     -webkit-transition: opacity 0.4s;
     -o-transition: opacity 0.4s;
     -moz-transition: opacity 0.4s;
     transition: opacity 0.4s;
 }
-
 .alert-validate::after {
     content: '\f12a';
     font-family: FontAwesome;
@@ -481,22 +415,17 @@ h1#result {
     transform: translateY(-50%);
     right: 8px;
 }
-
 .alert-validate:hover:before {
     visibility: visible;
     opacity: 1;
 }
-
 @media (max-width: 992px) {
     .alert-validate::before {
         visibility: visible;
         opacity: 1;
     }
 }
-
 /* Decimal to Binary Converter END */
-
-
 
 /*
   *************************************************
@@ -505,14 +434,9 @@ h1#result {
   **************************************************
    */
 
-
-
-
 /*-------------------------
 	Simple reset
 --------------------------*/
-
-
 
 h1#time {
     display: inline-block;
@@ -520,19 +444,14 @@ h1#time {
     padding-top: 30px;
     color: #333333;
 }
-
 .clock small {
     color: #333333;
 }
-
-
-
 .display {
     display: inline-block;
     float: right;
 
 }
-
 @media (max-width: 992px) {
     h1#time {
 
@@ -540,10 +459,15 @@ h1#time {
 
     }
 }
-
 /*
   *************************************************
   digital clock END
 
   **************************************************
    */
+.fa-clone {
+    cursor: pointer;
+}
+.fullDay {
+    text-align: center;
+}
