@@ -13,8 +13,7 @@ function binary(e) {
             snd.play()
         }, )
         alert('please enter a number')
-    } else if (num < 0) {
-        alert("please enter positive number")
+    } else if (num < 0) {        alert("please enter positive number")
     } else {
         result.style.visibility = "visible"
     }
@@ -52,18 +51,18 @@ function digitalClock() {
         timeFormat = 'AM';
     }
 
-    //condition applay less than 10 added zero 
-    // if(hours<10){ //less than means 10 Ar Caya Sotto
+    condition applay less than 10 added zero 
+    if(hours<10){ //less than means 10 Ar Caya Sotto
 
-    // hours="0"+ hours;
+    hours="0"+ hours;
 
-    // } if(minute<10){ 
+    } if(minute<10){ 
 
-    //     minute="0"+ minute;
-    // } if(second<10){ 
+        minute="0"+ minute;
+    } if(second<10){ 
 
-    //     second="0"+ second;
-    // } 
+        second="0"+ second;
+    } 
 
 
     hours = hours < 10 ? '0' + hours : hours;
